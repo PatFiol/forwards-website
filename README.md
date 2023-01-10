@@ -1,10 +1,10 @@
-# Personal Website Template
+# Company website
 
 ### Description
 
-Personal website with the characteristic of a rotating navigation bar.
+Simple website with the characteristic of a rotating navigation bar.
+I used a Delivery Service company as an hypothetical example.
 
-It can be used as a template.
 
 ---
 
