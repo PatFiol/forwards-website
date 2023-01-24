@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/e62634a422.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css" />
-  <title>Contact</title>
+  <title>Forwards Contact</title>
 </head>
 
 <body>
@@ -24,16 +24,42 @@
       </div>
     </div>
 
-      <header>
-        <h2>Contact</h2>
-      </header>
+    <header>
+      <h2>Contact</h2>
+    </header>
 
 
-      <main class="content content__contact flex">
+    <main class="content content__contact flex">
 
+      <form>
 
+        <div class="input-row">
+          <input type="text" id="name" required>
+          <label for="name"><i class="fa-solid fa-user"></i>Your name</label>
+        </div>
 
-      </main>
+        <div class="input-row">
+          <input type="number" id="phone" required></input>
+          <label for="phone"><i class="fa-solid fa-square-phone"></i>Your phone</label>
+        </div>
+
+        <div class="input-row">
+          <input type="text" id="email" required></input>
+          <label for="email"><i class="fa-solid fa-envelope"></i>Your email</label>
+        </div>
+
+        <div class="input-row">
+          <textarea id="message" rows="8" required></textarea>
+          <label for="message"><i class="fa-solid fa-comment-dots"></i>Your message</label>
+        </div>
+
+        <button type="submit">
+          SUBMIT
+        </button>
+
+      </form>
+
+    </main>
 
   </div>
 

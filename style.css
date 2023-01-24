@@ -76,13 +76,12 @@ p {
 	text-align: center;
 }
 
-.grid {
+/* .grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-}
+} */
 
-/* Header */
-
+/* HEADER */
 header {
 	white-space: nowrap;
 	padding-left: 5rem;
@@ -105,8 +104,7 @@ header .cta:hover {
 	box-shadow: 0 0 0.2em var(--accent-color);
 }
 
-/* Hero */
-
+/* HERO */
 .content {
   padding: 2rem 4rem;
 }
@@ -145,8 +143,7 @@ header .cta:hover {
 	color: var(--green);
 }
 
-/* Services */
-
+/* SERVICES */
 .content__services {
 	gap: 1em;
 }
@@ -164,8 +161,7 @@ header .cta:hover {
 	padding-bottom: 0.8rem;
 }
 
-/* About */
-
+/* ABOUT */
 .content__team img {
 	width: 50%;
 }
@@ -177,7 +173,6 @@ header .cta:hover {
 }
 
 /* FAQ */
-
 .content__faq {
   padding-top: 1rem;
   text-align: left;
@@ -193,6 +188,60 @@ header .cta:hover {
 	justify-content: right;
 	width: 50%;
 }
+
+/* CONTACT */
+form {
+	width: 90%;
+	max-width: 600px;
+}
+.input-row {
+	margin-bottom: 2rem;
+	text-align: left;
+	position: relative;
+}
+.input-row input, textarea {
+	width: 100%;
+	outline: none;
+	padding: 1rem;
+	background: transparent;
+	border-radius: 5px;
+	border: 1px solid var(--dark-color);
+	resize: none;
+}
+
+.input-row label {
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 1rem;
+	cursor: text;
+	transition: .3s;
+}
+
+.input-row i {
+	margin-inline-end: .5rem;
+}
+
+form button {
+	padding: 1rem 0;
+	outline: none;
+	background: transparent;
+	border: 1px solid var(--dark-color);
+	border-radius: 5px;
+	cursor: pointer;
+	width: 100%;
+}
+
+.input-row
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label {
+	top: -2.5rem;
+	font-size: small;
+}
+
 
 /* NAVIGATION */
 .container.show-nav {
