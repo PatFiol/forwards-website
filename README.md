@@ -7,15 +7,13 @@ I used a Delivery Service company as an hypothetical example.
 
 The approach in design is based on a minimalistic layout, with plain cards containing only basic information.
 
-The challenge was making it fully responsive and using different breakpoints.
-
----
 
 The functionality in JavaScript is very simple and straightforward.
 I learnt it from a small tutorial from Brad Traversy.
 
-### Screenshots
+The challenge was making it fully responsive and using different breakpoints.
 
+### Screenshots
 
 ![Forwards index_desk](https://user-images.githubusercontent.com/96197951/211615551-b3a61b6e-1d9c-4e97-8d76-ec9393fb6b24.jpg)
 ![Forwards index_rot_desk](https://user-images.githubusercontent.com/96197951/211615555-a8cffbfa-e542-4f9d-9734-dd16931c10ce.jpg)
