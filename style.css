@@ -5,17 +5,16 @@
 	margin: 0;
 
 	--dark-background: hsl(250, 20%, 20%);
-	--light-background: #eff6fb;
+	--light-background: hsl(205, 60%, 96%);
 	--dark-color: hsl(250, 20%, 40%);
-	--medium-color: rgb(115, 132, 140);
+	--medium-color: hsl(199, 10%, 50%);
 	--light-color: hsl(197, 95%, 91%);
 	--light-blue: hsl(200, 100%, 50%);
-	--green: #2e8a2e;
-	--accent-color: #ea435cf2;
+	--green: hsl(120, 50%, 36%);
+	--accent-color: hsla(351, 80%, 59%, 0.949);
 	--border: 5px;
-	--shadow: 0 0 4px var(--medium-color);
+	--shadow: 0 1px 5px hsla(0, 0%, 0%, 0.3), 0 1px 5px hsla(0, 0%, 0%, 0.1);
 	--circle: 50%;
-	/* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1); */
 }
 
 body {
@@ -106,12 +105,13 @@ header .cta {
 	border-radius: 6rem;
 	text-decoration: none;
 	color: var(--light-background);
-	font-size: 1.5em;
+	font-size: 1.4em;
 	padding: 0.5em 1em;
 	float: right;
 	margin-inline-end: 25%;
 	margin: 2rem;
 	cursor: pointer;
+	box-shadow: var(--shadow);
 }
 header .cta:hover {
 	scale: 1.1;
@@ -179,10 +179,15 @@ header .cta:hover {
 
 /* ABOUT */
 
+.about__team img {
+	box-shadow: var(--shadow);
+	border-radius: var(--circle);
+}
 .about__team--border img {
 	border: 1px solid black;
 	border-radius: var(--circle);
 	padding: 0.1rem;
+	box-shadow: var(--shadow);
 }
 
 /* FAQ */
@@ -279,6 +284,7 @@ form {
 	border-radius: var(--border);
 	border: 1px solid var(--dark-color);
 	resize: none;
+	box-shadow: var(--shadow);
 }
 
 .input-row label {
@@ -303,6 +309,14 @@ form button {
 	border-radius: var(--border);
 	cursor: pointer;
 	width: 100%;
+	font-size: 1.2em;
+	letter-spacing: .1em;
+	color: var(--accent-color);
+	box-shadow: var(--shadow);
+}
+
+form button:hover {
+	font-weight: 600;
 }
 
 .input-row
